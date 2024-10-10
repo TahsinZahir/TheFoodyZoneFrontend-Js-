@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>The Foody Zone</h1>
+        <nav>
+            <button id="login-btn">Login</button>
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCiTQHtyvV0rarqP2bpTU9NTap24v8z0wuoA&s" alt="Pizza">
+            <h3>Pizza...</h3>
+            
+            <p>Delicious cheese pizza...</p>
+            <p class="price">Rs.100...</p>
+            
+            <button class="add-to-cart" data-item="Pizza" data-price="100">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5notd9JfOzIAW6kz3GQmPDsnggQdrZmPjlA&s" alt="Burger">
+            <h3>Burger...</h3>
+            
+            <p>Juicy beef burger...</p>
+            <p class="price">Rs.50...</p>
+            
+            <button class="add-to-cart" data-item="Burger" data-price="50">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLb_AHdORtANcTXjeZTEptRD2wqbo2w4hspw&s" alt="Pasta">
+            <h3>Pasta...</h3>
+            
+            <p>Creamy alfredo pasta...</p>
+            <p class="price">Rs.70...</p>
+            <button class="add-to-cart" data-item="Pasta" data-price="70">Add to Cart</button>
+        </div>
+
+        <h2>Your Cart</h2>
+        <ul id="cart"></ul>
+        <p id="total-price">Total: Rs.0</p>
+        <button id="confirm-order" style="display: none;">Confirm Order</button>
+    </main>
+
+    <footer>
+        <p>&copy; The Foody Zone...Fast,Fresh,Free delivery!</p>
+    </footer>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="submit-login">Login</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
